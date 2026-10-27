@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de Edad</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Estilos del selector de fechas -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+        <!-- Librerías externas -->
+        <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    </head>
+
+    <body>
+
+        <main class="contenedor">
+            <h1>Age Calculator</h1>
+
+            <form id="formularioEdad">
+                <label for="fechaNacimiento">
+                    Enter your birth date:
+                </label>
+
+                <input type="text" id="fechaNacimiento" placeholder="DD/MM/YYYY" required readonly>
+
+                <button type="submit">Calculate</button>
+            </form>
+
+            <p id="resultado" aria-live="polite"></p>
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+
+    </html>
+
+</body>
+
+</html>
